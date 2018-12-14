@@ -280,7 +280,8 @@ layui.define(['jquery', 'form', 'layer', 'element'], function(exports) {
 	 */
 	function FrameWH() {
 		var h = $(window).height() - 164;
-		$("iframe").css("height", h + "px");
+		// console.log(h);
+		// $("iframe").css("height", h + "px");
 	}
 	$(window).resize(function() {
 		FrameWH();

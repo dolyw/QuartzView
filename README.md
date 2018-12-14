@@ -1,6 +1,16 @@
 # WeAdmin
 
-基于Layui的后台管理系统前端模板 http://lovetime.gitee.io/weadmin/
+> 在线示例:[https://wang926454.gitee.io/springbootquartz](https://wang926454.gitee.io/springbootquartz)
+
+## 我的修改
+
+2018-12-14
+修改界面
+ - ECharts的CND链接调整
+ - 去除底部栏
+ - 调整内部窗口高度
+
+> 基于Layui的后台管理系统前端模板-WeAdmin:[https://gitee.com/lovetime/WeAdmin](https://gitee.com/lovetime/WeAdmin)
 
 ## 更新记录
 
@@ -37,9 +47,6 @@ WeAdmin立项
 
 WeAdmin是基于Layui框架设计的Frame型后台管理系统。Layui是由职业前端倾情打造，面向所有层次的前后端开发者，零门槛开箱即用的前端UI解决方案。
 Layui发版以来一直受到不少猿的推崇，作为其中的小白，我也一直在推崇和学习中挣扎，WeAdmin无他，也只是小白实操的一个记录。
-
-
-
 
 ## 组件说明
 
