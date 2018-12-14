@@ -1,60 +1,44 @@
-# WeAdmin
+# SpringBootGenerator
 
-基于Layui的后台管理系统前端模板 http://lovetime.gitee.io/weadmin/
+> 参考:[https://github.com/lihengming/spring-boot-api-project-seed](https://github.com/lihengming/spring-boot-api-project-seed)
 
-## 更新记录
+### 项目相关
 
-2018-10-21 
-Layui基础版本更新
- - 感谢@Charlie @yinzhili 同学提交代码
- - layui基础版本更新为V2.3.0
- - layui基础版本2.4稳定后将再次更新
+* JavaDoc:[https://apidoc.gitee.com/wang926454/SpringBootGenerator](https://apidoc.gitee.com/wang926454/SpringBootGenerator)
 
-2018-03-28
-WeAdmin小版本修复
- - 增加了文章分类添加、编辑页面
- - 增加公用eleDel.js,个别通用页面独立加载
- - 修复右键加载刷新后个别图表、表格页面样式错乱问题（判断加载后首次点击刷新frame子页面）
- - 优化数据表格中表单元素点击问题(checked第一次点击无效)
- - 优化修复部分示例js报错及细节问题
+#### 项目介绍
 
-2018-02-05
-WeAdmin重新整理js调用方法
- - 增加了Tab菜单栏鼠标右键刷新、关闭方法
- - 增加了Tab菜单栏已打开菜单本地存储记录，刷新前已打开菜单不消失
- - 增加了Tab切换监听和删除监听事件
- - 使用[layui扩展模块](http://www.layui.com/doc/base/modules.html#extend)的方法重写了admin.js,里面包含了整个WeAdmin后台框架中常用的方法。
+SpringBootGenerator是一个基于SpringBoot & MyBatis的种子项目，用于快速构建中小型API、RESTful API项目，稳定、简单、快速，使我们摆脱那些重复劳动，专注于业务代码的编写，能在短短几十秒钟内实现一套简单的API(自动生成Model、Mapper、MapperXML、Service、ServiceImpl、Controller基础代码)，并运行提供服务
 
+1. 统一响应结果封装
+2. 统一异常处理
+3. 集成通用Mapper插件、PageHelper分页插件，实现单表业务零SQL
+4. Controller模板提供POST和RESTful两套
+5. 通用BaseService
 
-2018-02-01
-增加echarts定制使用实例
- - 基于echarts 4.0版本实现中国地图指定省份使用不同颜色标识，指定省份显示气泡图标。
+在原项目上修改
 
-2018-01-01
-WeAdmin立项
+1. 改为SpringBoot的通用Mapper插件、PageHelper分页插件，配置更少
+2. 提供更完整的通用BaseService
+3. 优化Controller方法
 
-## 简介
+#### 软件架构
 
-WeAdmin是基于Layui框架设计的Frame型后台管理系统。Layui是由职业前端倾情打造，面向所有层次的前后端开发者，零门槛开箱即用的前端UI解决方案。
-Layui发版以来一直受到不少猿的推崇，作为其中的小白，我也一直在推崇和学习中挣扎，WeAdmin无他，也只是小白实操的一个记录。
+SpringBoot + Mybatis + PageHelper + 通用Mapper
 
+#### 安装教程
 
+1. 解压后执行src\test\resources\sql\MySQL.sql脚本创建数据库和表
+2. src\test\java\com\example\generator\CodeGenerator.java运行Main方法生成代码
 
+#### 使用说明
 
-## 组件说明
+1. 可以自行修改src\test\resources\template下的模板
+2. 修改src\test\java\com\example\generator\CodeGenerator.java下的CONTROLLER_TYPE可以生成REST或者POST的Controller模板
 
-### Layui
-目前基于Layui 2.3.0版本
-官网： http://www.layui.com/
+#### 参与贡献
 
-### echarts
-目前基于echarts 4.0.2版本
-官网： http://echarts.baidu.com/ 
-
-## 借鉴参考
-WeAdmin借鉴了Layui相关案例：Layuicms/vip-admin/x-admin/jqadmin等等，及AdminLte/H-ui admin的demo
-
-http://blog.csdn.net/sj0613xz/article/details/79021890
-
-https://www.cnblogs.com/zhoushangwu/p/7891543.html
-
+1. Fork 本项目
+2. 新建 Feat_xxx 分支
+3. 提交代码
+4. 新建 Pull Request
