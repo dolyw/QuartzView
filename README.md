@@ -36,7 +36,7 @@ SpringBoot + Mybatis + PageHelper + 通用Mapper + Quartz定时任务 + Thymelea
 
 ### 搭建参考
 
-1. 
+1. SpringBoot几种定时任务的实现方式:[https://blog.csdn.net/wqh8522/article/details/79224290](https://blog.csdn.net/wqh8522/article/details/79224290)
 
 #### 参与贡献
 
