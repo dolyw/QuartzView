@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.SystemJobMapper">
+  <resultMap id="BaseResultMap" type="com.example.model.SystemJob">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="JOB_ID" jdbcType="INTEGER" property="jobId" />
+    <result column="JOB_NAME" jdbcType="VARCHAR" property="jobName" />
+    <result column="JOB_GROUP" jdbcType="VARCHAR" property="jobGroup" />
+    <result column="TRIGGER_STATE" jdbcType="VARCHAR" property="triggerState" />
+    <result column="CRON_EXPRESSION" jdbcType="VARCHAR" property="cronExpression" />
+    <result column="JOB_CLASS_NAME" jdbcType="VARCHAR" property="jobClassName" />
+    <result column="SPRING_ID" jdbcType="VARCHAR" property="springId" />
+    <result column="METHOD_NAME" jdbcType="VARCHAR" property="methodName" />
+    <result column="RESTFUL_URL" jdbcType="VARCHAR" property="restfulUrl" />
+    <result column="DESCRIPTION" jdbcType="VARCHAR" property="description" />
+    <result column="CREATED_DATE" jdbcType="TIMESTAMP" property="createdDate" />
+    <result column="CREATED_BY" jdbcType="VARCHAR" property="createdBy" />
+    <result column="UPDATED_DATE" jdbcType="TIMESTAMP" property="updatedDate" />
+    <result column="UPDATED_BY" jdbcType="VARCHAR" property="updatedBy" />
+  </resultMap>
+</mapper>

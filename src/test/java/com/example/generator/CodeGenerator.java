@@ -67,7 +67,7 @@ public class CodeGenerator {
      * @param args
      */
     public static void main(String[] args) {
-        genCode("user");
+        genCode("system_job");
     }
 
     /**

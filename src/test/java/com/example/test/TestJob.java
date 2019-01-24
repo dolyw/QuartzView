@@ -11,7 +11,7 @@ import org.springframework.http.ResponseEntity;
  * @author Wang926454
  * @date 2018/11/15 17:13
  */
-public class TestRole extends BaseTest {
+public class TestJob extends BaseTest {
 
     @Autowired
     private TestRestTemplate restTemplate;
@@ -22,7 +22,7 @@ public class TestRole extends BaseTest {
      */
     @Test
     public void get() throws Exception {
-        String body = this.restTemplate.getForObject("/user", String.class);
+        String body = this.restTemplate.getForObject("/system/job", String.class);
         System.out.println(body);
     }
 
@@ -32,7 +32,7 @@ public class TestRole extends BaseTest {
      */
     @Test
     public void post() throws Exception {
-        ResponseEntity<String> body = this.restTemplate.postForEntity("/user/list", "", String.class);
+        ResponseEntity<String> body = this.restTemplate.postForEntity("/system/job/list", "", String.class);
         System.out.println(body);
     }
 }

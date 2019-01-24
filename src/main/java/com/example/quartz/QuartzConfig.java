@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class QuartzConfig {
 
-    @Bean
+    /*@Bean
     public JobDetail testQuartz1() {
         return JobBuilder.newJob(TestTask1.class).withIdentity("testQuartz1").storeDurably().build();
     }
@@ -22,7 +22,7 @@ public class QuartzConfig {
         return JobBuilder.newJob(TestTask2.class).withIdentity("testQuartz2").storeDurably().build();
     }
 
-    /*@Bean
+    @Bean
     public Trigger testQuartzTrigger1() {
         // 1秒执行一次
         SimpleScheduleBuilder scheduleBuilder = SimpleScheduleBuilder.simpleSchedule()
