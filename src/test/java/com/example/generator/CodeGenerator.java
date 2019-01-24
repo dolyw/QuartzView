@@ -19,13 +19,13 @@ import java.util.*;
  */
 public class CodeGenerator {
     // Controller生成类型 REST POST
-    private static final String CONTROLLER_TYPE = "REST";
+    private static final String CONTROLLER_TYPE = "POST";
 
     // JDBC配置
-    private static final String JDBC_URL = "jdbc:mysql://localhost:3306/dev";
+    private static final String JDBC_URL = "jdbc:mysql://127.0.0.1:3306/springbootquartz?serverTimezone=GMT%2B8&useSSL=false&useUnicode=true&characterEncoding=UTF-8";
     private static final String JDBC_USERNAME = "root";
     private static final String JDBC_PASSWORD = "root";
-    private static final String JDBC_DIVER_CLASS_NAME = "com.mysql.jdbc.Driver";
+    private static final String JDBC_DIVER_CLASS_NAME = "com.mysql.cj.jdbc.Driver";
 
     // 生成代码所在的基础包名称(这个配置修改之后需要手工修改src目录项目默认的包路径，使其保持一致，不然会找不到类)
     private static final String BASE_PACKAGE = "com.example";
@@ -67,7 +67,7 @@ public class CodeGenerator {
      * @param args
      */
     public static void main(String[] args) {
-        genCode("user", "role", "permission");
+        genCode("user");
     }
 
     /**

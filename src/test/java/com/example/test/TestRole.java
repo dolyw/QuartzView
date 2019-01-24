@@ -22,7 +22,7 @@ public class TestRole extends BaseTest {
      */
     @Test
     public void get() throws Exception {
-        String body = this.restTemplate.getForObject("/role", String.class);
+        String body = this.restTemplate.getForObject("/user", String.class);
         System.out.println(body);
     }
 
@@ -32,7 +32,7 @@ public class TestRole extends BaseTest {
      */
     @Test
     public void post() throws Exception {
-        ResponseEntity<String> body = this.restTemplate.postForEntity("/role/list", "", String.class);
+        ResponseEntity<String> body = this.restTemplate.postForEntity("/user/list", "", String.class);
         System.out.println(body);
     }
 }

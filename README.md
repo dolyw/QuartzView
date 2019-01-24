@@ -28,7 +28,7 @@ SpringBoot + Mybatis + PageHelper + 通用Mapper + Quartz定时任务 + Thymelea
 
 #### 安装教程
 
-1. 解压后执行src\test\resources\sql\MySQL.sql脚本创建数据库和表
+1. 解压后执行src\main\resources\sql\mysql.sql脚本创建数据库和表
 
 #### 使用说明
 
@@ -37,6 +37,9 @@ SpringBoot + Mybatis + PageHelper + 通用Mapper + Quartz定时任务 + Thymelea
 ### 搭建参考
 
 1. SpringBoot几种定时任务的实现方式:[https://blog.csdn.net/wqh8522/article/details/79224290](https://blog.csdn.net/wqh8522/article/details/79224290)
+2. SpringBoot官方文档:[https://docs.spring.io/spring-boot/docs/2.1.1.RELEASE/reference/htmlsingle/#boot-features-quartz](https://docs.spring.io/spring-boot/docs/2.1.1.RELEASE/reference/htmlsingle/#boot-features-quartz)
+3. SpringBoot2.x开发案例之整合Quartz任务管理系统:[https://www.cnblogs.com/smallSevens/p/8798451.html](https://www.cnblogs.com/smallSevens/p/8798451.html)
+4. Spring Boot教程(二十一)：Spring Boot使用Quartz定时任务:[https://blog.csdn.net/gnail_oug/article/details/80825302](https://blog.csdn.net/gnail_oug/article/details/80825302)
 
 #### 参与贡献
 

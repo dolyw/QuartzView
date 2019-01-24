@@ -4,12 +4,12 @@ server:
 spring:
     datasource:
         name: SpringBootQuartz
-        url: jdbc:mysql://127.0.0.1:3306/springbootquartz?useSSL=false&useUnicode=true&characterEncoding=UTF-8
+        url: jdbc:mysql://127.0.0.1:3306/springbootquartz?serverTimezone=GMT%2B8&useSSL=false&useUnicode=true&characterEncoding=UTF-8
         username: root
         password: root
         # 使用Druid数据源
         type: com.alibaba.druid.pool.DruidDataSource
-        driver-class-name: com.mysql.jdbc.Driver
+        driver-class-name: com.mysql.cj.jdbc.Driver
         druid:
             filters: stat
             maxActive: 20
@@ -30,6 +30,14 @@ spring:
     # 404交给异常处理器处理
     resources:
         add-mappings: false
+    quartz:
+        # quartz采用数据库存储方式
+        job-store-type: jdbc
+        # 每次启动重新初始化数据库中Quartz相关的表，如果不需要每次启动服务都重新创建表
+        # 下面两项可以不配置，事先在数据库中创建好Quartz相关的表
+        jdbc:
+          initialize-schema: always
+          schema: classpath:schema/quartz_mysql.sql
 
 mybatis:
     # Mybatis配置Mapper路径
