@@ -24,12 +24,6 @@ spring:
             testOnReturn: false
             poolPreparedStatements: true
             maxOpenPreparedStatements: 20
-    # 404交给异常处理器处理
-    mvc:
-        throw-exception-if-no-handler-found: true
-    # 404交给异常处理器处理
-    resources:
-        add-mappings: false
     quartz:
         # quartz采用数据库存储方式
         job-store-type: jdbc
@@ -38,6 +32,13 @@ spring:
         jdbc:
           initialize-schema: always
           schema: classpath:schema/quartz_mysql.sql
+    # 开启thymeleaf必须关闭404交给异常处理器处理配置
+    # 不然无法访问静态资源
+    thymeleaf:
+        # 开发时关闭缓存不然没法看到实时页面
+        cache: false
+        # 启用不严格检查
+        mode: LEGACYHTML5
 
 mybatis:
     # Mybatis配置Mapper路径

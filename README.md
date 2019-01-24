@@ -16,7 +16,7 @@
 #### 完成进度
 
 - [x] SpringBootGenerator作为后台基础架子
-- [ ] WeAdmin作为前端基础架子
+- [x] WeAdmin作为前端基础架子
 - [ ] SpringBootGenerator和WeAdmin整合，WeAdmin修改为Thymeleaf
 - [ ] 集成Quartz
 - [ ] 完成定时任务的CRUD
