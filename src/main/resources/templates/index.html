@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
-	<head th:include="/common/common :: head('WeAdmin后台模板')"></head>
+	<head th:include="/common/common :: head('后台管理')"></head>
 
 	<body>
 		<!-- 顶部开始 -->
 		<div class="container">
 			<div class="logo">
-				<a th:href="@{index.shtml}">WeAdmin后台模板</a>
+				<a href="./index.html">后台管理</a>
 			</div>
 			<div class="left_open">
 				<i title="展开左侧栏" class="iconfont">&#xe699;</i>
@@ -38,10 +38,10 @@
 							<a onclick="WeAdminShow('个人信息','https://wang64.cn')">个人主页</a>
 						</dd>
 						<dd>
-							<a onclick="WeAdminShow('切换帐号','login.shtml')">切换帐号</a>
+							<a onclick="WeAdminShow('切换帐号','./login.html')">切换帐号</a>
 						</dd>
 						<dd>
-							<a class="loginout" href="login.shtml">退出</a>
+							<a class="loginout" href="login.html">退出</a>
 						</dd>
 					</dl>
 				</li>
@@ -60,117 +60,43 @@
 					<li>
 						<a href="javascript:;">
 							<i class="iconfont">&#xe6b8;</i>
-							<cite>会员管理</cite>
+							<cite>任务管理</cite>
 							<i class="iconfont nav_right">&#xe697;</i>
 						</a>
 						<ul class="sub-menu">
 							<li>
-								<a _href="pages/member/list.shtml">
+								<a _href="./pages/member/list.html">
 									<i class="iconfont">&#xe6a7;</i>
-									<cite>会员列表</cite>
+									<cite>任务列表</cite>
 
 								</a>
 							</li>
 							<li>
-								<a _href="pages/member/del.shtml">
+								<a _href="./pages/member/del.html">
 									<i class="iconfont">&#xe6a7;</i>
-									<cite>会员删除</cite>
+									<cite>任务删除</cite>
 
 								</a>
 							</li>
 							<li>
 								<a href="javascript:;">
 									<i class="iconfont">&#xe70b;</i>
-									<cite>会员管理</cite>
+									<cite>任务管理</cite>
 									<i class="iconfont nav_right">&#xe697;</i>
 								</a>
 								<ul class="sub-menu">
 									<li>
-										<a _href="pages/member/addInput.shtml">
+										<a _href="./pages/404.shtml">
 											<i class="iconfont">&#xe6a7;</i>
-											<cite>输入框操作</cite>
-										</a>
-									</li>
-									<li>
-										<a _href="pages/404.shtml">
-											<i class="iconfont">&#xe6a7;</i>
-											<cite>三级菜单演示</cite>
+											<cite>404页面</cite>
 										</a>
 									</li>
 								</ul>
 							</li>
 						</ul>
 					</li>
-					<!--<li>
-						<a href="javascript:;">
-							<i class="iconfont">&#xe705;</i>
-							<cite>文章管理</cite>
-							<i class="iconfont nav_right">&#xe697;</i>
-						</a>
-						<ul class="sub-menu">
-							<li>
-								<a _href="./pages/article/list.html">
-									<i class="iconfont">&#xe6a7;</i>
-									<cite>文章列表</cite>
-								</a>
-							</li>
-							<li>
-								<a _href="./pages/article/category.html">
-									<i class="iconfont">&#xe6a7;</i>
-									<cite>分类管理</cite>
-								</a>
-							</li>
-						</ul>
-					</li>-->
-					<!--<li>
-						<a href="javascript:;">
-							<i class="iconfont">&#xe723;</i>
-							<cite>订单管理</cite>
-							<i class="iconfont nav_right">&#xe697;</i>
-						</a>
-						<ul class="sub-menu">
-							<li>
-								<a _href="./pages/order/list.html">
-									<i class="iconfont">&#xe6a7;</i>
-									<cite>订单列表</cite>
-								</a>
-							</li>
-						</ul>
-					</li>-->
+
 					<li>
-						<a href="javascript:;">
-							<i class="iconfont">&#xe726;</i>
-							<cite>管理员管理</cite>
-							<i class="iconfont nav_right">&#xe697;</i>
-						</a>
-						<ul class="sub-menu">
-							<li>
-								<a _href="pages/admin/list.shtml">
-									<i class="iconfont">&#xe6a7;</i>
-									<cite>管理员列表</cite>
-								</a>
-							</li>
-							<li>
-								<a _href="pages/admin/role.shtml">
-									<i class="iconfont">&#xe6a7;</i>
-									<cite>角色管理</cite>
-								</a>
-							</li>
-							<li>
-								<a _href="pages/admin/cate.shtml">
-									<i class="iconfont">&#xe6a7;</i>
-									<cite>权限分类</cite>
-								</a>
-							</li>
-							<li>
-								<a _href="pages/admin/rule.shtml">
-									<i class="iconfont">&#xe6a7;</i>
-									<cite>权限管理</cite>
-								</a>
-							</li>
-						</ul>
-					</li>
-					<!--<li>
 						<a href="javascript:;">
 							<i class="iconfont">&#xe6ce;</i>
 							<cite>系统统计</cite>
@@ -178,61 +104,61 @@
 						</a>
 						<ul class="sub-menu">
 							<li>
-								<a _href="./pages/echarts/echarts1.html">
+								<a _href="./pages/echarts/echarts1.shtml">
 									<i class="iconfont">&#xe6a7;</i>
 									<cite>拆线图</cite>
 								</a>
 							</li>
 							<li>
-								<a _href="./pages/echarts/echarts2.html">
+								<a _href="./pages/echarts/echarts2.shtml">
 									<i class="iconfont">&#xe6a7;</i>
 									<cite>柱状图</cite>
 								</a>
 							</li>
-							<li>
-								<a _href="./pages/echarts/echarts3.html">
+							<!--<li>
+								<a _href="./pages/echarts/echarts3.shtml">
 									<i class="iconfont">&#xe6a7;</i>
 									<cite>地图</cite>
 								</a>
-							</li>
+							</li>-->
 							<li>
-								<a _href="./pages/echarts/echarts4.html">
+								<a _href="./pages/echarts/echarts4.shtml">
 									<i class="iconfont">&#xe6a7;</i>
 									<cite>饼图</cite>
 								</a>
 							</li>
 							<li>
-								<a _href="./pages/echarts/echarts5.html">
+								<a _href="./pages/echarts/echarts5.shtml">
 									<i class="iconfont">&#xe6a7;</i>
 									<cite>雷达图</cite>
 								</a>
 							</li>
 							<li>
-								<a _href="./pages/echarts/echarts6.html">
+								<a _href="./pages/echarts/echarts6.shtml">
 									<i class="iconfont">&#xe6a7;</i>
 									<cite>k线图</cite>
 								</a>
 							</li>
 							<li>
-								<a _href="./pages/echarts/echarts7.html">
+								<a _href="./pages/echarts/echarts7.shtml">
 									<i class="iconfont">&#xe6a7;</i>
 									<cite>热力图</cite>
 								</a>
 							</li>
 							<li>
-								<a _href="./pages/echarts/echarts8.html">
+								<a _href="./pages/echarts/echarts8.shtml">
 									<i class="iconfont">&#xe6a7;</i>
 									<cite>仪表图</cite>
 								</a>
 							</li>
-							<li>
-								<a _href="./pages/echarts/echarts9.html">
+							<!--<li>
+								<a _href="./pages/echarts/echarts9.shtml">
 									<i class="iconfont">&#xe6a7;</i>
 									<cite>地图DIY实例</cite>
 								</a>
-							</li>
+							</li>-->
 						</ul>
-					</li>-->
+					</li>
 				</ul>
 			</div>
 		</div>
@@ -261,38 +187,30 @@
 		<!-- 底部结束 -->
 		<div th:include="/common/common :: commonJS" th:remove="tag"></div>
 		<script type="text/javascript" th:inline="javascript">
-//			layui扩展模块的两种加载方式-示例
-//		    layui.extend({
-//			  admin: '{/}../../static/js/admin' // {/}的意思即代表采用自有路径，即不跟随 base 路径
-//			});
-//			//使用拓展模块
-//			layui.use('admin', function(){
-//			  var admin = layui.admin;
-//			});
 			layui.config({
-			  base: /*[[@{/js/}]]*/ './static/js/'
-			  ,version: '101100'
+			  	base: /*[[@{/js/}]]*/ './static/js/',
+			  	version: '101100'
 			}).use('admin');
-			layui.use(['jquery','admin'], function(){
+			layui.use(['jquery', 'admin'], function(){
 				var $ = layui.jquery;
-				$(function(){
+				$(function() {
 					var login = JSON.parse(localStorage.getItem("login"));
-					if(login){
-						if(login=0){
+					if (login) {
+						if(login = 0) {
 							window.location.href = /*[[@{/login.shtml}]]*/ './login.html';
 							return false;
-						}else{
+						} else {
 							return false;
 						}
-					}else{
+					} else {
 						window.location.href = /*[[@{/login.shtml}]]*/ './login.html';
 						return false;
 					}
 				});
 			});
-
 		</script>
 	</body>
+
 	<!--Tab菜单右键弹出菜单-->
 	<ul class="rightMenu" id="rightMenu">
         <li data-type="fresh">刷新</li>

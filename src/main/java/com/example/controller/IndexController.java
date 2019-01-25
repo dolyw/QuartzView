@@ -37,4 +37,18 @@ public class IndexController {
         return module + "/" + url;
     }
 
+    /**
+     * 通用页面跳转(三级目录)
+     * @param module
+	 * @param url
+     * @return java.lang.String
+     * @author Wang926454
+     * @date 2019/1/25 19:35
+     */
+    @RequestMapping("{module}/{module2}/{url}.shtml")
+    public String page(@PathVariable("module") String module, @PathVariable("module2") String module2,
+                       @PathVariable("url") String url) {
+        return module + "/" + module2 + "/" + url;
+    }
+
 }
