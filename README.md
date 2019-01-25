@@ -9,6 +9,7 @@
  - ECharts的CND链接调整
  - 去除底部栏
  - 调整内部窗口高度
+ - 简单调整登录和主页
 
 > 基于Layui的后台管理系统前端模板-WeAdmin:[https://gitee.com/lovetime/WeAdmin](https://gitee.com/lovetime/WeAdmin)
 
