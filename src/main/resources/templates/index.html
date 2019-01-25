@@ -38,10 +38,10 @@
 							<a onclick="WeAdminShow('个人信息','https://wang64.cn')">个人主页</a>
 						</dd>
 						<dd>
-							<a onclick="WeAdminShow('切换帐号','./login.html')">切换帐号</a>
+							<a onclick="WeAdminShow('切换帐号','./login.shtml')">切换帐号</a>
 						</dd>
 						<dd>
-							<a class="loginout" href="login.html">退出</a>
+							<a class="loginout" href="login.shtml">退出</a>
 						</dd>
 					</dl>
 				</li>
@@ -58,8 +58,16 @@
 			<div id="side-nav">
 				<ul id="nav">
 					<li>
+						<a _href="./pages/welcome.shtml">
+							<i class="iconfont">&#xe726;</i>
+							<cite>我的桌面</cite>
+							<i class="iconfont nav_right">&#xe697;</i>
+						</a>
+					</li>
+
+					<li>
 						<a href="javascript:;">
-							<i class="iconfont">&#xe6b8;</i>
+							<i class="iconfont">&#xe723;</i>
 							<cite>任务管理</cite>
 							<i class="iconfont nav_right">&#xe697;</i>
 						</a>
@@ -68,20 +76,18 @@
 								<a _href="./pages/member/list.html">
 									<i class="iconfont">&#xe6a7;</i>
 									<cite>任务列表</cite>
-
 								</a>
 							</li>
 							<li>
 								<a _href="./pages/member/del.html">
 									<i class="iconfont">&#xe6a7;</i>
 									<cite>任务删除</cite>
-
 								</a>
 							</li>
 							<li>
 								<a href="javascript:;">
-									<i class="iconfont">&#xe70b;</i>
-									<cite>任务管理</cite>
+									<i class="iconfont">&#xe6b8;</i>
+									<cite>错误页面</cite>
 									<i class="iconfont nav_right">&#xe697;</i>
 								</a>
 								<ul class="sub-menu">
@@ -136,7 +142,7 @@
 							<li>
 								<a _href="./pages/echarts/echarts6.shtml">
 									<i class="iconfont">&#xe6a7;</i>
-									<cite>k线图</cite>
+									<cite>K线图</cite>
 								</a>
 							</li>
 							<li>
@@ -168,11 +174,11 @@
 		<div class="page-content">
 			<div class="layui-tab tab" lay-filter="wenav_tab" id="WeTabTip" lay-allowclose="true">
 				<ul class="layui-tab-title" id="tabName">
-					<li>我的桌面</li>
+					<li>我的主页</li>
 				</ul>
 				<div class="layui-tab-content">
 					<div class="layui-tab-item layui-show">
-						<iframe th:src='@{pages/welcome.shtml}' frameborder="0" scrolling="yes" class="weIframe"></iframe>
+						<iframe src="https://cmd.wang64.cn" frameborder="0" scrolling="yes" class="weIframe"></iframe>
 					</div>
 				</div>
 			</div>
