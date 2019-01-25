@@ -40,6 +40,10 @@ SpringBoot + Mybatis + PageHelper + 通用Mapper + Quartz定时任务 + Thymelea
 2. SpringBoot官方文档:[https://docs.spring.io/spring-boot/docs/2.1.1.RELEASE/reference/htmlsingle/#boot-features-quartz](https://docs.spring.io/spring-boot/docs/2.1.1.RELEASE/reference/htmlsingle/#boot-features-quartz)
 3. SpringBoot2.x开发案例之整合Quartz任务管理系统:[https://www.cnblogs.com/smallSevens/p/8798451.html](https://www.cnblogs.com/smallSevens/p/8798451.html)
 4. Spring Boot教程(二十一)：Spring Boot使用Quartz定时任务:[https://blog.csdn.net/gnail_oug/article/details/80825302](https://blog.csdn.net/gnail_oug/article/details/80825302)
+5. Thymeleaf教程 （十二） 标签内，js中使用表达式:[https://blog.csdn.net/mygzs/article/details/52667897](https://blog.csdn.net/mygzs/article/details/52667897)
+6. DAY23 Thymeleaf html 导入(th:replace & th:include):[https://blog.csdn.net/h1021456873/article/details/79085505](https://blog.csdn.net/h1021456873/article/details/79085505)
+7. thymeleaf中的th:remove用法:[https://www.cnblogs.com/suncj/p/4030975.html](https://www.cnblogs.com/suncj/p/4030975.html)
+8. Thymeleaf的include封装共用js和css:[https://blog.csdn.net/zqy_zq_zxl/article/details/72773973](https://blog.csdn.net/zqy_zq_zxl/article/details/72773973)
 
 #### 参与贡献
 

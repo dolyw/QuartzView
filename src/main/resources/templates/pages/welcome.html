@@ -1,17 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 
-	<head>
-		<meta charset="UTF-8">
-		<title>欢迎页面-WeAdmin Frame型后台管理系统-WeAdmin 1.0</title>
-		<meta name="renderer" content="webkit">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
-		<link rel="stylesheet" href="../static/css/font.css">
-		<link rel="stylesheet" href="../static/css/weadmin.css">
-
-
-	</head>
+	<head th:include="/common/common :: head('主页')"></head>
 
 	<body>
 		<div class="weadmin-body">
@@ -350,10 +340,10 @@
 			</div>
 		</div>
 	</body>
-	<script type="text/javascript" src="../lib/layui/layui.js" charset="utf-8"></script>
-	<script type="text/javascript">
+	<div th:include="/common/common :: commonJS" th:remove="tag"></div>
+	<script type="text/javascript" th:inline="javascript">
 		layui.extend({
-			admin: '{/}../static/js/admin',
+			admin: /*[[@{/js/admin}]]*/ '{/}../static/js/admin',
 		});
 		layui.use(['jquery', 'element','util', 'admin', 'carousel'], function() {
 			var element = layui.element,

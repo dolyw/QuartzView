@@ -1,18 +1,6 @@
 <!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>登录</title>
-	<meta name="renderer" content="webkit|ie-comp|ie-stand">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="Cache-Control" content="no-siteapp" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/font.css">
-	<link rel="stylesheet" href="css/weadmin.css">
-    <script src="lib/layui/layui.js" charset="utf-8"></script>
-
-</head>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:include="/common/common :: head('登录')"></head>
 <body class="login-bg">
     
     <div class="login">
@@ -32,10 +20,10 @@
         </form>
     </div>
 
-    <script type="text/javascript">
-        
+    <div th:include="/common/common :: commonJS" th:remove="tag"></div>
+    <script type="text/javascript" th:inline="javascript">
         	layui.extend({
-				admin: '{/}js/admin'
+				admin: /*[[@{/js/admin}]]*/ '{/}js/admin'
 			});
             layui.use(['form','admin'], function(){
               var form = layui.form
@@ -49,7 +37,7 @@
                     location.href = 'index.shtml';
                 });*/
                 layer.msg(JSON.stringify(data.field));
-                location.href = 'index.shtml';
+                location.href = /*[[@{/index.shtml}]]*/ 'index.shtml';
                 return false;
               });
             });   
