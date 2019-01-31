@@ -3,23 +3,57 @@
 <head th:include="/common/common :: vueHead('我的桌面')"></head>
 <body>
 <div id="app">
-	<p>With desc</p>
-	<i-button type="primary" @click="info(false)">Info</i-button>
-	<i-button type="info" @click="success(false)">Success</i-button>
-	<i-button type="info" @click="warning(false)">Warning</i-button>
-	<i-button type="info" @click="error(false)">Error</i-button>
-	<p>Only title</p>
-	<i-button type="info" @click="info(true)">Info</i-button>
-	<i-button type="success" @click="success(true)">Success</i-button>
-	<i-button type="warning" @click="warning(true)">Warning</i-button>
-	<i-button type="error" @click="error(true)">Error</i-button>
+	<i-layout>
+		<i-content :style="{margin: '20px', minHeight: '220px'}">
+			<i-table border :columns="columns" :data="data"></i-table>
+		</i-content>
+	</i-layout>
 </div>
 <script type="text/javascript" th:inline="javascript">
-    /*<![CDATA[*/
-    let myHome = new Vue({
+	/*<![CDATA[*/
+    var myHome = new Vue({
         el: '#app',
         data: {
-            visible: false
+            columns: [
+                {
+                    title: 'Name',
+                    key: 'name'
+                },
+                {
+                    title: 'Age',
+                    key: 'age'
+                },
+                {
+                    title: 'Address',
+                    key: 'address'
+                }
+            ],
+            data: [
+                {
+                    name: 'John Brown',
+                    age: 18,
+                    address: 'New York No. 1 Lake Park',
+                    date: '2016-10-03'
+                },
+                {
+                    name: 'Jim Green',
+                    age: 24,
+                    address: 'London No. 1 Lake Park',
+                    date: '2016-10-01'
+                },
+                {
+                    name: 'Joe Black',
+                    age: 30,
+                    address: 'Sydney No. 1 Lake Park',
+                    date: '2016-10-02'
+                },
+                {
+                    name: 'Jon Snow',
+                    age: 26,
+                    address: 'Ottawa No. 2 Lake Park',
+                    date: '2016-10-04'
+                }
+            ]
         },
         methods: {
             info (nodesc) {
