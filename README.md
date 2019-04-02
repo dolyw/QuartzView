@@ -1,6 +1,6 @@
 # WeAdmin
 
-> 在线示例:[https://wang926454.gitee.io/springbootquartz](https://wang926454.gitee.io/springbootquartz)
+> 在线示例:[https://wang926454.gitee.io/quartzview](https://wang926454.gitee.io/springbootquartz)
 
 ## 我的修改
 
