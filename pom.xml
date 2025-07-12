@@ -30,7 +30,7 @@
         <freemarker.version>2.3.23</freemarker.version>
         <generator.version>1.3.6</generator.version>
         <guava.version>23.0</guava.version>
-        <commons-lang3.version>3.7</commons-lang3.version>
+        <commons-lang3.version>3.18.0</commons-lang3.version>
     </properties>
 
     <dependencies>
